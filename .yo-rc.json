@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Team of Skybox IT",
+      "authorEmail": "jmoran.skylogistics@gmail.com",
+      "authorUrl": "Team of Skybox IT"
+    }
+  }
+}
