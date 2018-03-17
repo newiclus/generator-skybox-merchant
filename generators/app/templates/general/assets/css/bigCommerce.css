@@ -1,0 +1,31 @@
+@media (min-width: 544px) { /* Small/Medium/Large/Extra large devices only */
+    /* Cornerstore theme - cart button */
+    [class*=cart-actions] > div.skybox-checkout-payment-btn {  margin-top:0px !important; padding-top:0px !important; display: table !important; }
+    /* Cornerstore theme - mini-cart button */
+    [class*=preview] > div.skybox-checkout-payment-btn { width: 100%; padding: .75rem .75rem 0 .75rem !important; margin-top:30px !important; }
+
+    /* Peak theme (bloquv site) - cart button */
+    [class*=cart-totals-column] > div.skybox-checkout-payment-btn { margin-top:-40px !important; padding-top:0px !important; display: table !important; }
+    /* Peak theme (bloquv site) - mini-cart button */
+    [class*=mini-cart] > div.skybox-checkout-payment-btn { display: block !important; }
+    [class*=mini-cart] > div.skybox-checkout-payment-btn > a[class*=button] { width: 100%; }
+}
+@media (max-width: 544px) { /* Extra small devices, Portrait phones only  */
+    /* Cornerstore theme - cart button */
+    [class*=cart-actions] > div.skybox-checkout-payment-btn { margin-top:10px !important; margin-right:0px !important; padding-top:0px !important; display: block !important; float:none !important; }
+    /* Cornerstore theme - mini-cart button (not applicable) */
+
+    /* Peak theme (bloquv site) - cart button */
+    [class*=cart-totals-column] > div.skybox-checkout-payment-btn { margin-top:-20px !important; padding-top:0px !important; display: block !important; }
+    /* Peak theme (bloquv site) - mini-cart button (not applicable) */
+}
+
+/* SBC Invoice within Successfull page */
+#skybox-international-checkout-invoice > table > tbody > tr > td { padding: 0px; border:0; }
+#skybox-international-checkout-invoice > table, #skybox-international-checkout-invoice > table > tr > td, #skybox-international-checkout-invoice > table > tr > td > table > tr > td  { border: 0px !important; }
+#skybox-international-checkout-invoice > table > tbody > tr > td > table > tbody > tr > td > table > tbody > tr > td { padding: 0px !important; border-top: 0; }
+table > tbody > tr > td { border-left: 0px !important; }
+div > p > strong > a, div > p > a { color: #3399cc !important; text-decoration: none !important;  }
+table[align=center] { border:0; }
+table[align=center] > tbody > tr > td > table { border:0; margin:0; }
+table[align=center] > tbody > tr > td { padding:0px; border:0; }

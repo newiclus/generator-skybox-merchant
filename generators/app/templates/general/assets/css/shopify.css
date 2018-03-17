@@ -1,0 +1,239 @@
+.skbx-hide { display: none !important; }
+.skbx-loader-checkout-price{ text-align: right; }
+
+/* Component : Change Country */
+
+.nav a.icon-cart-count {
+  font-size: 18px !important;
+  font-family: 'Droid Sans';
+  padding: 17px 5px 10px 5px;
+}
+.nav a.icon-cart-count span { color: #fff; }
+.nav a.icon-cart-count span:hover { color: #363636 !important; }
+.nav a.icon-cart-count:hover { color: #363636 !important; }
+
+.skx_flag {
+  cursor: pointer;
+  margin: 0 4px 1px;
+  vertical-align: middle;
+  line-height: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  div.index div.content #skybox-checkout-change-country {
+    z-index: 1111;
+  }
+  div.content {
+    padding-top: 60px;
+    z-index: 111;
+    position: relative;
+  }
+  #skybox-checkout-change-country td {
+    padding: 5px 0px 5px 0px !important;
+  }
+  #your-shopping-cart #skybox-checkout-change-country {
+    margin-top: 55px;
+  }
+}
+
+iframe#skybox-international-checkout {
+  /*weight: 2000px !important;*/
+  border: 0 !important;
+}
+
+/* Component : Tool Bar */
+#skybox-checkout-change-country {
+  margin: 0 auto;
+  max-width: 1148px;
+  padding: 0 20px;
+  width: 100%;
+}
+
+#skybox-checkout-change-country table {
+  margin: 0;
+  margin-bottom: 0;
+  border: 0;
+}
+
+#skybox-checkout-change-country th, #skybox-checkout-change-country td {
+  padding: 0px !important;
+  border: 0px;
+}
+
+#skybox-checkout-change-country table tr {
+  border: 0;
+}
+
+/* Component : Button Price */
+
+.internationalPrice table {
+  margin: 0;
+}
+
+.internationalPrice table tr,
+.internationalPrice table tr:first-child {
+  border: 0;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.internationalPrice table tbody tr,
+.internationalPrice table tbody tr:first-child {
+  border: 0;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.internationalPrice table th,
+.internationalPrice table td,
+.internationalPrice table tr td:first-child,
+.internationalPrice table tr th:first-child {
+  border: 0;
+  border-left: 0;
+  border-right: 0;
+  padding: 10px;
+  height: auto;
+}
+
+/* Component : Subtotal */
+#international-checkout table tr {
+  border: 0px;
+}
+
+#international-checkout table td,
+#international-checkout table th {
+  border: 0px;
+  padding: 5px;
+}
+
+#international-checkout .a-left {
+  text-align: left;
+  width: 120px;
+}
+
+#international-checkout .a-right {
+  float: right;
+  /*width: 80px;*/
+}
+
+#skybox-international-checkout {
+  padding: 20px 0;
+}
+
+
+/* Component: Invoice iframe */
+#skybox-international-checkout-invoice table tr {
+	border-bottom: 0 solid #dcdcdc;
+}
+#skybox-international-checkout-invoice table tr:first-child {
+	border-top: 0px solid #dcdcdc;
+}
+#skybox-international-checkout-invoice table td:first-child, table th:first-child {
+	border-left: 0px solid #dcdcdc;
+}
+#skybox-international-checkout-invoice table td, table th {
+	border-right: 0px solid #dcdcdc;
+}
+#skybox-international-checkout-invoice table {
+  border: 0 solid #b9b9b9;
+  margin-bottom: 0px;
+}
+
+#skybox-international-checkout-invoice table td {
+   border: 0 solid #b9b9b9;
+}
+
+#skybox-international-checkout-invoice table td,
+#skybox-international-checkout-invoice table th {
+  padding: 0;
+}
+
+/* Others: Pages */
+#checkout-success .main .center { display: none !important; }
+.skbx-restricted {display:none;}
+/* Custom off */
+
+@media only screen and (max-width: 767px) {
+  .price_total { display: inline; }
+}
+
+.btn--full2 {
+  color: #ffffff;
+}
+
+
+#skybox-international-checkout-invoice { padding: 40px 0 80px; }
+
+/* Patch for Fancybox */
+.fancybox-content {
+  height: 660px;
+}
+.fancybox-content > iframe {
+  overflow-y: hidden;
+  padding-top: 30px;
+}
+.facybox-opened {
+  z-index: 8030;
+  transform: translateZ(100px); /* added */
+}
+
+@media (max-width: 667px) {
+  .skx_content_button a, 
+  .skx_content_button a:visited {
+    color: #66cc33 !important;
+  }
+
+  #skybox-checkout-change-country {
+    padding: 0 10px;
+  }
+
+  #cart .skx_btn_checkout { line-height: 1; }
+
+  .content.main-wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .container .sixteen.columns { width: 100%; }
+}
+
+/* Animation for 3 dots */
+.invisible {
+  opacity: 0;
+}
+
+.wait-for-calc {
+  color: #ffffff;
+}
+
+.saving {
+  font-size: 40px;
+}
+
+.saving span {
+  font-size: 50px;
+  animation-name: blink;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.saving span:nth-child(2) {
+  animation-delay: .2s;
+}
+
+.saving span:nth-child(3) {
+  animation-delay: .4s;
+}
+
+@keyframes blink {
+  0% {
+    opacity: .2;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .2;
+  }
+}

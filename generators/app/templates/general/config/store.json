@@ -1,0 +1,22 @@
+{
+  "IDSTORE": "00286",
+  "MERCHANT": "Q01VQULKSUZVUK1ZNFNNTTLLVUTGUEFBUVZLNUMZMLE",
+  "MERCHANTCODE":  "2f226e3f-60ac-4e1c-9b95-5a1b0c46da27",
+  "CHECKOUT_BUTTON": {
+    "class": "button search-submit",
+    "text": "Proceed to Checkout"
+  },
+  "CONF": {
+    "PAGINATION_PRODUCTS": {
+      "VALUE": "TRUE",
+      "ID_DIV_PAGINACION": ".product-list"
+    },
+    "PRODUCT_TYPE_DEFAULT": "67",
+    "CARRITO_AJAX": "TRUE"
+  },
+  "CHECKOUT_PAGE": "/pages/order-summary",
+  "SUCCESSFUL_PAGE": "/pages/checkout-success",
+  "STORE_HASH":"ygea",
+  "STORE_URL": "https://sbcmerchant.myshopify.com/",
+  "MOD_PLATAFORM": "shopify"
+}

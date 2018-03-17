@@ -1,0 +1,9 @@
+# Add any directories, files, or patterns you don't want to be tracked by version control
+dist
+node_modules
+config/store.json
+build/*.js
+package-lock.json
+ngrok.exe
+docs/
+.DS_Store

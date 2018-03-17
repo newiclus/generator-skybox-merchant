@@ -1,0 +1,12 @@
+{
+  "SKYBOX_CHECKOUT_API" : "https://api.skyboxcheckout.com/v2/",
+  "SKYBOX_CHECKOUT_URL" : "https://www.skyboxcheckout.com/",
+  "SKYBOX_CHECKOUT_AUHT" : "https://api.skyboxcheckout.com/v2/authenticate",
+  "SKYBOX_CHECKOUT_AUHT_CART" : "https://api.skyboxcheckout.com/v2/authenticate/cart",
+  "SKYBOX_CHECKOUT_CART" : "https://api.skyboxcheckout.com/v2/cart",
+  "SKYBOX_CHECKOUT_MULTICALCULATE":"https://api.skyboxcheckout.com/v2/multicalculate",
+  "URL_TIENDA":"https://www.skyboxcheckout.com/",
+  "URL_TIENDAWEB":"WebForms/Checkout/APICheckout.aspx?"
+}
+ 
+
