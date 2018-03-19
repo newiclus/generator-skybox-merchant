@@ -14,44 +14,25 @@ module.exports = class extends Generator {
 
     const prompts = [
       {
-        type: 'checkbox',
+        type: 'list',
         name: 'merchant',
         message: 'Choose the Merchant',
-        choices: [
-          {
-            name: 'Shopify',
-            checked: true
-          },
-          {
-            name: '3dCart'
-          },
-          {
-            name: 'BigCommerce'
-          }
-        ],
+        choices: ['Shopify', '3dCart', 'BigCommerce'],
         validate: function(answer) {
           if (answer.length < 1) {
             return 'You must choose at least one merchant.';
           }
           return true;
         },
-        filter: function(val) {
-          return val.toLowerCase();
+        filter: function(answer) {
+          return answer.toLowerCase();
         }
       },
       {
-        type: 'checkbox',
+        type: 'list',
         name: 'integration',
         message: 'Choose the type of integration',
-        choices: [
-          {
-            name: '1',
-            checked: true
-          },
-          {
-            name: '3'
-          }
-        ],
+        choices: ['1', '3'],
         validate: function(answer) {
           if (answer.length < 1) {
             return 'You must choose at least one.';
@@ -161,6 +142,10 @@ module.exports = class extends Generator {
       this.templatePath('general/src/xhr.js'),
       this.destinationPath('./src/xhr.js')
     );
+  }
+
+  installingSDK() {
+    this.npmInstall(['@skyboxcheckout/merchant-sdk@latest']);
   }
 
   install() {

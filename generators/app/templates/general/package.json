@@ -1,10 +1,9 @@
 {
-  "name": "skybox-merchant-plugin",
+  "name": "skybox-<%= merchant %>-plugin",
   "merchant": "<%= merchant %>",
   "version": "1.0.0",
   "description": "",
-  "integrationType": "<%= integration %>",
-  "main": "index.js",
+  "integrationType": "<%= typeIntegration %>",
   "scripts": {
     "dev": "webpack --watch --config webpack.dev.js",
     "build-prod": "webpack --config webpack.prod.js && node ./build.prod.js",
@@ -34,7 +33,6 @@
   "license": "ISC",
   "dependencies": {
     "jquery": "^3.3.1",
-    "merchant-sdk": "^1.0.1",
     "store": "^2.0.12",
     "tingle.js": "^0.13.2",
     "underscore": "^1.8.3"
