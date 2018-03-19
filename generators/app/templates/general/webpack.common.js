@@ -20,7 +20,8 @@ if (plataforma.length > 0) {
 
   module.exports = {
     entry: {
-      sky : entryPoint
+      "sky": entryPoint,
+      "sky.min": entryPoint
     },
     plugins: [
       new CleanWebpackPlugin(['dist']),
@@ -31,7 +32,7 @@ if (plataforma.length > 0) {
         'window.jquery': 'jquery',
         '$': 'jquery',
         'window.$': 'jquery',
-         underscore:'underscore'
+        underscore:'underscore'
       })
     ],
     module: {
@@ -60,7 +61,7 @@ if (plataforma.length > 0) {
       ]
     },
     output: {
-      filename: nameFile + '.js',
+      filename: "[name].js",
       path: path.resolve(__dirname, 'dist')
     }
   };
