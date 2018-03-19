@@ -1,13 +1,12 @@
 import { setTimeout } from 'timers';
-import SkyboxSDK from 'skybox-sdk';
-//import Client from 'shopify-buy';
+import SkyboxSDK from '@skyboxcheckout/merchant-sdk';
 
 (function () {
   $(document).ready(function () {
     require('../../assets/css/shopify.css');
     const __cnStore = require('../../config/store.json');
     const _ = require('underscore');
-    const api = require('../api')    
+    const api = require('../xhr')    
     const path_home = require("path");
     //Session/Local Storage
     const engine = require('store/src/store-engine');
@@ -32,16 +31,6 @@ import SkyboxSDK from 'skybox-sdk';
       CHECKOUT_PAGE: '/pages/order-summary',
       CHECKOUT_BUTTON_CLASS: 'button search-submit'
     });
-
-    //const client = Client.buildClient({
-      //domain: 'sbcmerchant.myshopify.com',
-      //storefrontAccessToken: 'ac79846dc9d66cb5a1c163c5ae89cf31'
-    //});
-
-    //client.product.fetchAll().then((products) => {
-      // Do something with the products
-      //console.info("Products: ", products);
-    //});
 
 
     Sdk.Common().Init();

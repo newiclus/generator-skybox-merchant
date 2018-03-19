@@ -1,3 +1,3 @@
 const error = require ('util');
-require ('../api.js');
+require ('../xhr.js');
 require ('../store/shopify.js');
