@@ -1,7 +1,7 @@
 {
-  "name": "generator-skybox-merchant",
+  "name": "@skyboxcheckout/generator-skybox-merchant",
   "version": "0.1.0",
-  "description": "Create the structure folder for Skybox store project",
+  "description": "Create the structure folder for Skybox merchant project",
   "homepage": "https://github.com/newiclus/generator-skybox-merchant/wiki",
   "author": {
     "name": "Team of Skybox IT",
@@ -13,8 +13,8 @@
   ],
   "main": "generators/index.js",
   "keywords": [
-    "skybox",
-    "yeoman-generator"
+    "skyboxcheckout",
+    "merchant"
   ],
   "devDependencies": {
     "yeoman-test": "^1.7.0",

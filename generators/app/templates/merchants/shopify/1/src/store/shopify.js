@@ -58,7 +58,7 @@ const Sdk = new SkyboxSDK({
 
     const func_searchVariant = require('./core/searchVariant');
 
-    
+
     // Get Event Listener
     (function (open) {
       XMLHttpRequest.prototype.open = function () {
@@ -133,8 +133,15 @@ const Sdk = new SkyboxSDK({
     }
 
     if ($(location).attr('href').indexOf(__cnStore.SUCCESSFUL_PAGE) > -1) {
+
       if ($('#skybox-international-checkout-invoice').length > 0) {
-        $('#skybox-international-checkout-invoice').html('<h1 id="mensaje" style="text-align:center;"><img src="https://s3.amazonaws.com/sky-sbc-images/WebApp/SBC/Images/loader.gif"/></h1>');
+        
+        $('#skybox-international-checkout-invoice').html(`
+          <h1 id="mensaje" style="text-align:center;">
+            <img src="https://s3.amazonaws.com/sky-sbc-images/WebApp/SBC/Images/loader.gif"/>
+          </h1>
+        `);
+        
         api.get(__cnStore.STORE_URL + '/cart/clear.js').then(() => {
           Sdk.getCartInvoice().then(function (content) {
             var content = JSON.parse(content).Data.Invoice

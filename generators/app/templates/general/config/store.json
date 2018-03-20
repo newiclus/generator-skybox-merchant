@@ -1,7 +1,7 @@
 {
-  "IDSTORE": "00286",
-  "MERCHANT": "Q01VQULKSUZVUK1ZNFNNTTLLVUTGUEFBUVZLNUMZMLE",
-  "MERCHANTCODE":  "2f226e3f-60ac-4e1c-9b95-5a1b0c46da27",
+  "IDSTORE": "0000",
+  "MERCHANT": "0000000000000000000000000000",
+  "MERCHANTCODE":  "1a1a1a1a1a1-2b2b-3c3c-4d4d-5c5c5c5c5c5",
   "CHECKOUT_BUTTON": {
     "class": "button search-submit",
     "text": "Proceed to Checkout"
@@ -16,7 +16,7 @@
   },
   "CHECKOUT_PAGE": "/pages/order-summary",
   "SUCCESSFUL_PAGE": "/pages/checkout-success",
-  "STORE_HASH":"ygea",
+  "STORE_HASH":"demo",
   "STORE_URL": "https://sbcmerchant.myshopify.com/",
   "MOD_PLATAFORM": "shopify"
 }
