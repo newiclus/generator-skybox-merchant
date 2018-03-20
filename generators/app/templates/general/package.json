@@ -5,9 +5,9 @@
   "description": "",
   "integrationType": "<%= typeIntegration %>",
   "scripts": {
-    "dev": "webpack --watch --config webpack.dev.js",
-    "build-prod": "webpack --config webpack.prod.js && node ./build.prod.js",
-    "build": "webpack --config webpack.prod.js"
+    "dev": "webpack --watch --config webpack.dev.js --mode development",
+    "prod": "webpack --config webpack.prod.js --mode production",
+    "build": "webpack --config webpack.dev.js --mode development && webpack --config webpack.prod.js --mode production"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
