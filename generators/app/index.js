@@ -144,11 +144,11 @@ module.exports = class extends Generator {
     );
   }
 
-  installingSDK() {
-    this.npmInstall(['@skyboxcheckout/merchant-sdk@1.0.1']);
-  }
-
   install() {
     this.installDependencies();
+  }
+
+  installingSDK() {
+    this.npmInstall(['@skyboxcheckout/merchant-sdk@1.0.1']);
   }
 };

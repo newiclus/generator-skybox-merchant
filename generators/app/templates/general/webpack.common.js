@@ -1,6 +1,4 @@
-
 const path = require('path');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
 const webpack = require('webpack');
 const conf = require('./config/store.json');
 
@@ -20,11 +18,9 @@ if (plataforma.length > 0) {
 
   module.exports = {
     entry: {
-      "sky": entryPoint,
-      "sky.min": entryPoint
+      sky: entryPoint,
     },
-    plugins: [
-      new CleanWebpackPlugin(['dist']),
+    plugins: [      
       new webpack.ProvidePlugin({
         'jQuery': 'jquery',
         'window.jQuery': 'jquery',
@@ -61,7 +57,7 @@ if (plataforma.length > 0) {
       ]
     },
     output: {
-      filename: "[name].js",
+      filename: nameFile + '.js',
       path: path.resolve(__dirname, 'dist')
     }
   };
