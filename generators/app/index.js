@@ -149,6 +149,6 @@ module.exports = class extends Generator {
   }
 
   installingSDK() {
-    this.npmInstall(['@skyboxcheckout/merchant-sdk']);
+    this.npmInstall(['@skyboxcheckout/merchant-sdk@latest']);
   }
 };
