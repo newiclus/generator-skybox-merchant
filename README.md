@@ -30,7 +30,7 @@ MIT © [Team Skybox](Team Skybox)
 
 
 [npm-image]: https://badge.fury.io/js/generator-skybox-merchant.svg
-[npm-url]: https://npmjs.org/package/generator-kybox-merchant
+[npm-url]: https://npmjs.org/package/generator-skybox-merchant
 [travis-image]: https://travis-ci.org/newiclus/generator-skybox-merchant.svg?branch=master
 [travis-url]: https://travis-ci.org/newiclus/generator-skybox-merchant
 [daviddm-image]: https://david-dm.org/newiclus/generator-skybox-merchant.svg?theme=shields.io
